@@ -13,7 +13,7 @@ int main()
     //converting BGR to Gray image
     cvtColor(img,imgGray,COLOR_BGR2GRAY);
     //Gaussian blur
-    GaussianBlur(img,imgBlur,Size(3,3),3,0);
+    GaussianBlur(imgGray,imgBlur,Size(3,3),3,0);
     //Canny Image
     Canny(imgBlur,imgCanny,25,75);
 
