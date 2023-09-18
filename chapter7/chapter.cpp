@@ -23,7 +23,7 @@ void getContours(Mat imgDil,Mat img){
             
             float peri=arcLength(contours[i],true);
             approxPolyDP(contours[i],conPoly[i],0.02*peri,true);
-            drawContours(img,conPoly,i,Scalar(255,0,255),2);
+            // drawContours(img,conPoly,i,Scalar(255,0,255),2);
 
             boundRect[i]=boundingRect(conPoly[i]);
             objCor=(int)conPoly[i].size();
