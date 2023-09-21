@@ -32,7 +32,7 @@ int main(){
         Scalar lower(hmin,smin,vmin);
         Scalar upper(hmax,smax,vmax);
         inRange(imgHsv,lower,upper,mask);
-        imshow("Image HSV",imgHsv);
+        // imshow("Image HSV",imgHsv);
         imshow("Image Mask",mask);
         waitKey(1);
     }
